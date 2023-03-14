@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  blog:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    command: uvicorn blog.main:app --host 0.0.0.0 --reload
+    volumes:
+      - .:/app
+    ports:
+      - 8099:8000
