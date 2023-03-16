@@ -1,0 +1,129 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block banner_slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/banner/b44.jpg' %}" class="d-block w-100" height="400"alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/banner/b22.jpg' %}" class="d-block w-100" height="400" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/banner/b33.jpg' %}" class="d-block w-100"height="400" alt="...">
+    </div>
+  </div>
+</div>
+{% endblock banner_slider %}
+{% block information %}
+<div class="container mt-2">
+<div class="row bg-primary text-center text-white border-bottom shadow">
+  <h1>Products</h1>
+  <small class="fs-5">An e-commerce website is one that allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.
+
+    E-commerce sites are also a popular way to sell services, like consultations, maintenance, tutoring, lessons, and more.
+  </small>
+
+</div>
+  </div>
+{% endblock information %}
+{% block main-content %}
+<div class="container">
+  <h2 class="text-center">E commerce Products</h2>
+  <br><br>
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name=none">
+    <div  class="goodnesssec buttermilk mobile"><a href="{% url 'category' 'M' %}">
+      <div class="goodnessseccont text-center">
+       <img  src="{%  static 'images/product/mobile.jpg' %}" class="img-responsive  center-block" alt="">
+        <p class="mlkpro">mobiles</p>
+
+      </div>
+
+
+    </a>
+
+    </div>
+
+      </div>
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp " data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name=none">
+    <div  class="goodnesssec buttermilk sarees"><a href="{% url 'category' 'F' %}">
+      <div class="goodnessseccont text-center">
+       <img  src="{%  static 'images/product/sarees.jpg' %}" class="img-responsive  center-block" alt="">
+        <p class="milk">Sarees</p>
+
+      </div>
+
+    </a>
+
+    </div>
+        </div>
+       <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name=none">
+    <div  class="goodnesssec buttermilk toys"><a href="{% url 'category' 'F' %}">
+      <div class="goodnessseccont text-center">
+       <img  src="{%  static 'images/product/sarees.jpg' %}" class="img-responsive center-block" alt="">
+        <p class="milk">Sarees</p>
+
+      </div>
+
+    </a>
+
+    </div>
+    </div>
+  </div>
+
+<!--</div>-->
+<!--  </div>-->
+<!--</div>-->
+<br/></br>
+</div>
+<div class="container">
+
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name=none">
+    <div  class="goodnesssec buttermilk mobile"><a href="{% url 'category' 'M' %}">
+      <div class="goodnessseccont text-center">
+       <img  src="{%  static 'images/product/mobile.jpg' %}" class="img-responsive  center-block" alt="">
+        <p class="mlkpro">Mobile 2</p>
+
+      </div>
+
+
+    </a>
+
+    </div>
+
+      </div>
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp " data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name=none">
+    <div  class="goodnesssec buttermilk sarees"><a href="">
+      <div class="goodnessseccont text-center">
+       <img  src="{%  static 'images/product/sarees.jpg' %}" class="img-responsive  center-block" alt="">
+        <p class="milk">Sarees</p>
+
+      </div>
+
+    </a>
+
+    </div>
+        </div>
+       <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"data-wow-delay="0.6s" style="animation-duration:1s; animation-delay: 0.6s; animation-name=none">
+    <div  class="goodnesssec buttermilk toys"><a href="">
+      <div class="goodnessseccont text-center">
+       <img  src="{%  static 'images/product/sarees.jpg' %}" class="img-responsive center-block" alt="">
+        <p class="milk">Sarees</p>
+
+      </div>
+
+    </a>
+
+    </div>
+    </div>
+  </div>
+
+<!--</div>-->
+<!--  </div>-->
+<!--</div>-->
+
+</div>
+{% endblock main-content %}

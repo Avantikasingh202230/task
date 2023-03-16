@@ -1,0 +1,40 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}Category{% endblock title %}
+{% block main-content %}
+{% block banner_slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'images/banner/b44.jpg' %}" class="d-block w-100" height="200"alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/banner/b22.jpg' %}" class="d-block w-100" height="200" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'images/banner/b33.jpg' %}" class="d-block w-100"height="200" alt="...">
+    </div>
+  </div>
+</div>
+{% endblock banner_slider %}
+
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">ABOUT Us</h2>
+    <br>
+    <p class="fs-4 text-center">Electronic commerce (ecommerce) refers to companies and individuals that buy and sell goods and services over the Internet. Ecommerce operates in different types of market segments and can be conducted over computers, tablets, smartphones, and other smart devices.</p>
+</div>
+
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">Missions</h2>
+    <br>
+    <p class="fs-4 text-center">Electronic commerce (ecommerce) refers to companies and individuals that buy and sell goods and services over the Internet. Ecommerce operates in different types of market segments and can be conducted over computers, tablets, smartphones, and other smart devices.</p>
+</div>
+<!--<h2 class="text-center">Mission</h2>-->
+<!--<br>-->
+<!--<div class="row container">-->
+<!--      <p class="fs-4 text-center">Electronic commerce (ecommerce) refers to companies and individuals that buy and sell goods and services over the Internet. Ecommerce operates in different types of market segments and can be conducted over computers, tablets, smartphones, and other smart devices.</p>-->
+
+<!--</div>-->
+{% endblock main-content %}
